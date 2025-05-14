@@ -59,3 +59,25 @@ Visualization: Plotly, matplotlib, seaborn
 Graph Analysis: NetworkX
 
 Others: Jupyter Notebook, Git, Kaggle Datasets
+
+📊 Dataset
+Source: Kaggle - Crime Data (2020–Present)
+Includes details such as crime type, date, location, description, and more.
+
+📌 Use Cases Demonstrated
+Criminal intelligence workflows for law enforcement
+
+Public safety threat detection
+
+Identity resolution and entity matching
+
+Automated summarization and classification of crime reports
+
+Prompt-driven intelligence gathering using LLMs
+
+👤 Author
+Janhavi S. Ghuge
+Data Scientist | NLP & Investigative Analytics | LinkedIn
+
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
