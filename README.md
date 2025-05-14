@@ -47,3 +47,15 @@ investigative-analytics-pipeline/
 ├── requirements.txt
 └── config.py                # API keys and paths (excluded in .gitignore)
 
+🧪 Tech Stack
+Languages: Python (3.10+)
+
+Libraries: pandas, scikit-learn, spaCy, NetworkX, matplotlib, seaborn, fuzzywuzzy
+
+NLP & LLMs: OpenAI API, transformers, LangChain (optional)
+
+Visualization: Plotly, matplotlib, seaborn
+
+Graph Analysis: NetworkX
+
+Others: Jupyter Notebook, Git, Kaggle Datasets
