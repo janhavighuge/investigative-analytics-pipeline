@@ -1,83 +1,64 @@
-# 🔍 Investigative Analytics Pipeline
+# 🔍 Repeat Offender Detection: Investigative Analytics on U.S. Crime Data
 
-A full-stack crime data analytics project that simulates real-world law enforcement and identity verification use cases using U.S. crime data (2020–Present). This project integrates **entity resolution**, **link analysis**, **anomaly detection**, and **NLP + LLM prompt engineering** to generate actionable investigative insights and improve public safety decision-making.
-
----
-
-## 🚀 Project Overview
-
-In an era where crime and fraud threats are growing increasingly complex, agencies need rapid, intelligent tools to process vast datasets and uncover hidden connections. This project builds a prototype investigative system that:
-
-- Resolves messy or inconsistent entity records (e.g., suspects, locations).
-- Uncovers networks and hidden associations between people, places, and events.
-- Flags unusual patterns or outliers in time-series and spatial crime data.
-- Extracts structured insights and classifications from unstructured narratives.
-- Leverages prompt engineering to simulate intelligence workflows using LLMs.
+A focused crime analytics case study that simulates real-world investigative workflows using U.S. crime data (2020–Present). This project identifies **repeat violent offenders** across multiple jurisdictions by integrating **entity resolution**, **NLP classification**, and **spatial-temporal analysis** — all while dealing with messy, inconsistent records.
 
 ---
 
-## 🧠 Key Features
+## 🎯 Problem Statement
 
-| Component              | Description |
-|------------------------|-------------|
-| 🧩 **Entity Resolution** | Identify and unify duplicate records (e.g., same person with different name spellings). |
-| 🌐 **Link Analysis**      | Create relationship graphs between suspects, crimes, and locations. |
-| ⚠️ **Anomaly Detection**  | Detect unexpected spikes, drops, or outliers in crime data across time/geographies. |
-| 🗣️ **NLP Tasks**          | Text cleaning, keyword extraction, classification (violent vs non-violent), entity extraction. |
-| 🤖 **LLM Prompt Engineering** | Use GPT to summarize crime incidents, identify potential motives, and simulate investigations. |
+Law enforcement databases often suffer from inconsistent entries — the same individual may appear under multiple aliases, name spellings, or incomplete records. This makes it difficult to accurately:
+
+- Track repeat offenders,
+- Identify cross-jurisdictional threats, and
+- Allocate investigative resources efficiently.
 
 ---
 
-## 📂 Folder Structure
+## ✅ Project Goal
 
-```bash
-investigative-analytics-pipeline/
+To detect and profile **repeat violent crime offenders** by:
+
+- Resolving inconsistent or duplicate suspect names (e.g., “Jon Doe” vs. “Johnathan D.”).
+- Classifying incidents as **violent or non-violent** using NLP on crime descriptions.
+- Analyzing patterns in **offender recurrence** across **time** and **geographies**.
+
+---
+
+## 📊 Key Metrics
+
+- 🔄 **Repeat Offender Count** (before vs. after entity resolution)
+- 📎 **Entity Variants Merged**: Number of unique offenders identified from messy name variations
+- 📈 **Classification Accuracy**: Precision/Recall of NLP model for violent crime detection
+
+---
+
+## 🧠 Methods & Features
+
+| Component              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| 🧩 Entity Resolution    | Fuzzy matching & rule-based logic to unify suspect aliases                 |
+| 🗣️ NLP Classification   | Extract & classify violent vs. non-violent incidents from text descriptions |
+| 🌐 Geo-Temporal Analysis | Track repeat offenses over time and by location                            |
+| 🤖 LLM Prompt Engineering | Simulate “offender profile” generation and narrative summarization         |
+
+---
+
+## 🗂️ Folder Structure
+
+
+investigative-repeat-offenders/
 │
-├── data/                    # Raw & processed data
-├── notebooks/               # Jupyter notebooks for each module
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_entity_resolution.ipynb
-│   ├── 03_link_analysis.ipynb
-│   ├── 04_anomaly_detection.ipynb
-│   ├── 05_nlp_prompt_engineering.ipynb
+├── data/ # Raw & processed crime data
+├── notebooks/ # Jupyter notebooks for each module
+│ ├── 01_data_cleaning.ipynb
+│ ├── 02_entity_resolution.ipynb
+│ ├── 03_nlp_classification.ipynb
+│ ├── 04_repeat_offender_analysis.ipynb
+│ ├── 05_llm_profiling.ipynb
 │
-├── prompts/                 # Prompt templates for LLMs
-├── outputs/                 # Visualizations, graphs, and results
+├── prompts/ # Prompt templates for LLMs (e.g., offender profile generation)
+├── outputs/ # Visualizations, maps, final results
 ├── README.md
 ├── requirements.txt
-└── config.py                # API keys and paths (excluded in .gitignore)
+└── config.py # API keys and file paths (excluded in .gitignore)
 
-🧪 Tech Stack
-Languages: Python (3.10+)
-
-Libraries: pandas, scikit-learn, spaCy, NetworkX, matplotlib, seaborn, fuzzywuzzy
-
-NLP & LLMs: OpenAI API, transformers, LangChain (optional)
-
-Visualization: Plotly, matplotlib, seaborn
-
-Graph Analysis: NetworkX
-
-Others: Jupyter Notebook, Git, Kaggle Datasets
-
-📊 Dataset
-Source: Kaggle - Crime Data (2020–Present)
-Includes details such as crime type, date, location, description, and more.
-
-📌 Use Cases Demonstrated
-Criminal intelligence workflows for law enforcement
-
-Public safety threat detection
-
-Identity resolution and entity matching
-
-Automated summarization and classification of crime reports
-
-Prompt-driven intelligence gathering using LLMs
-
-👤 Author
-Janhavi S. Ghuge
-Data Scientist | NLP & Investigative Analytics | LinkedIn
-
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
