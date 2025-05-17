@@ -4,26 +4,43 @@
 ## 🧪 Tech Stack
 
 - **Languages**: Python (3.10+)
-- **Libraries**: `pandas`, `fuzzywuzzy`, `scikit-learn`, `spaCy`, `NetworkX`, `matplotlib`, `seaborn`, `plotly`
-- **NLP & LLMs**: `transformers`, `OpenAI API`, `LangChain` (optional)
-- **Notebook Environment**: Jupyter, Google Colab
+- **Data**: Chicago Crime Dataset (2001–Present)
+- **Libraries**:
+  - `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`
+  - `scikit-learn` (classification)
+  - `statsmodels`, `prophet`, `isolation-forest` (anomaly detection)
+  - `NetworkX` (link analysis)
+  - `openai`, `transformers` (LLM-powered summaries)
+- **Tools**: Jupyter, Google Colab, Git
 
 ---
 
-## 📂 Dataset
+## 🧠 Components & Methods
 
-- **Source**: [Kaggle – US Crime Data (2020–Present)](https://www.kaggle.com/datasets)
-- Includes fields: `date`, `location`, `crime type`, `description`, `suspect name`, etc.
+| Component                  | Description                                                                 |
+|----------------------------|-----------------------------------------------------------------------------|
+| 🗂️ Data Cleaning           | Remove nulls, standardize crime types, format timestamps                   |
+| 🧩 Violent Crime Classifier | Binary label mapping of `Primary Type` + NLP on `Description`              |
+| ⚠️ Anomaly Detection        | Detect spikes in weekly/monthly violent crime rates using z-score & IQR     |
+| 🌐 Link Analysis            | Network graph: `Primary Type` ↔ `Location Description`                     |
+| 🤖 LLM Summarization        | Prompt GPT to generate concise, motive-based summaries of crime events     |
 
 ---
 
-## 🚨 Real-World Relevance
+## 📌 Dataset
 
-This project mirrors how criminal intelligence teams:
+- **Source**: [Chicago Data Portal – Crimes 2001 to Present](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2)
+- **Fields Used**:
+  - `Primary Type`, `Description`, `Date`, `Location Description`, `Latitude/Longitude`, `Arrest`
 
-- Resolve identities across siloed systems
-- Detect repeat violent actors early
-- Support public safety through data-driven insights
+---
+
+## 📈 Example Outputs
+
+- 📍 Heatmaps of violent crime by location
+- 📅 Time-series plots showing spikes in battery and assault
+- 🧠 Summaries like:  
+  > *"An aggravated battery occurred at a residence involving firearm use. Possible domestic dispute. Arrest made."*
 
 ---
 
