@@ -1,0 +1,40 @@
+
+---
+
+## 🧪 Tech Stack
+
+- **Languages**: Python (3.10+)
+- **Libraries**: `pandas`, `fuzzywuzzy`, `scikit-learn`, `spaCy`, `NetworkX`, `matplotlib`, `seaborn`, `plotly`
+- **NLP & LLMs**: `transformers`, `OpenAI API`, `LangChain` (optional)
+- **Notebook Environment**: Jupyter, Google Colab
+
+---
+
+## 📂 Dataset
+
+- **Source**: [Kaggle – US Crime Data (2020–Present)](https://www.kaggle.com/datasets)
+- Includes fields: `date`, `location`, `crime type`, `description`, `suspect name`, etc.
+
+---
+
+## 🚨 Real-World Relevance
+
+This project mirrors how criminal intelligence teams:
+
+- Resolve identities across siloed systems
+- Detect repeat violent actors early
+- Support public safety through data-driven insights
+
+---
+
+## 👤 Author
+
+**Janhavi S. Ghuge**  
+Data Scientist | NLP & Investigative Analytics  
+[LinkedIn](https://www.linkedin.com/in/janhavighuge)
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – see the `LICENSE` file for details.
